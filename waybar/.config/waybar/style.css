@@ -1,0 +1,45 @@
+@define-color foreground #eff0f1;
+@define-color foreground-inactive #7f8c8d;
+@define-color background #232629;
+@define-color background-alt #31363b;
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: CommitMono Nerd Font Mono;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    color: @foreground;
+    background-color: @background;
+}
+
+#workspaces button {
+    padding-left: 1em;
+    padding-right: 1.3em;
+    color: #ffffff;
+}
+
+#workspaces button.empty {
+    color: @foreground-inactive;
+}
+
+#workspaces button.active {
+    background-color: @background-alt;
+    border-radius: 3px;
+}
+
+#clock,
+#cpu,
+#memory,
+#disk,
+#network,
+#wireplumber,
+#tray,
+#window,
+
+#network {
+    margin-right: 0.8em;
+}
