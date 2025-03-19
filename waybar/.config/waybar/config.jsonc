@@ -73,10 +73,11 @@
     "menu": "on-click",
     "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
     "menu-actions": {
-      "shutdown": "shutdown",
-      "reboot": "reboot",
+      "lock": "hyprlock",
       "suspend": "systemctl suspend",
-      "hibernate": "systemctl hibernate"
+      "reboot": "reboot",
+      "shutdown": "shutdown -h now"
+      //"hibernate": "systemctl hibernate"
     }
   },
   "bluetooth": {

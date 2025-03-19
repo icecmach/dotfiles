@@ -8,3 +8,4 @@ fzf --fish | source
 
 alias cd z
 alias cat bat
+alias env "env | sort"
