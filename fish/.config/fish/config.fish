@@ -9,3 +9,9 @@ fzf --fish | source
 alias cd z
 alias cat bat
 alias env "env | sort"
+
+# Vagrant
+alias vdown "vagrant halt"
+alias vssh "vagrant ssh"
+alias vup "vagrant up"
+alias vsus "vagrant suspend"
