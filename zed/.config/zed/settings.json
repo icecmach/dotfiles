@@ -18,5 +18,10 @@
     "light": "One Dark",
     "dark": "One Dark"
   },
-  "format_on_save": "off"
+  "format_on_save": "off",
+  "terminal": {
+    "shell": {
+         "program": "/usr/bin/fish"
+       }
+  }
 }
