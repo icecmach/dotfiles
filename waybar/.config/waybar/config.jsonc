@@ -15,6 +15,8 @@
     "network",
     "cpu",
     "memory",
+    "custom/hebday",
+    "custom/hebmon",
     "clock",
     "bluetooth",
     "tray",
@@ -40,6 +42,16 @@
     // "icon-size": 21,
     "spacing": 10
   },
+  "custom/hebday": {
+    "exec": "$HOME/git-workspace/hebcal/hebcal -Th | awk -F'[^0-9]*' '{print $1}'",
+    "interval": "once",
+    "format": "| {}"
+  },
+  "custom/hebmon": {
+    "exec": "$HOME/git-workspace/hebcal/hebcal -Th | awk '{print $3}' | tr -cd '[:alnum:][:space:]'",
+    "interval": "once",
+    "format": "{} |"
+  },
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}",
@@ -51,11 +63,11 @@
   },
   "memory": {
     "interval": 30,
-    "format": "\uf4bc  {used:0.1f}G"
+    "format": "\uf4bc {used:0.1f}G"
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-wifi": "{essid}({signalStrength}%) ",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
@@ -63,7 +75,7 @@
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "wireplumber": {
-    "format": "\udb81\udd7e  {volume}%",
+    "format": "\udb81\udd7e {volume}%",
     "max-volume": 100,
     "scroll-step": 5
    },
