@@ -2,7 +2,7 @@
 
 sleep 1
 
-WALLPAPER_DIR="$HOME/Wallpapers/"
+WALLPAPER_DIR="$HOME/03.Pictures/03.01.Wallpapers/"
 CURRENT_WALL=$(hyprctl hyprpaper listloaded)
 
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n 1)

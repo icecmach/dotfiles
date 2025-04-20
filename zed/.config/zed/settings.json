@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Catppuccin Frappé",
   "outline_panel": {
     "dock": "right"
   },
@@ -18,13 +19,24 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "One Dark",
+    "light": "Catppuccin Frappé - No Italics",
     "dark": "One Dark"
   },
   "format_on_save": "off",
   "terminal": {
     "shell": {
-         "program": "/usr/bin/fish"
-       }
+        "program": "/usr/bin/fish"
+      }
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["pylsp"],
+      "format_on_save": "on",
+      "formatter": {
+        "language_server": {
+          "name": "pylsp"
+        }
+      }
+    }
   }
 }
