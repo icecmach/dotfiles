@@ -43,12 +43,12 @@
     "spacing": 10
   },
   "custom/hebday": {
-    "exec": "$HOME/git-workspace/hebcal/hebcal -Th | awk -F'[^0-9]*' '{print $1}'",
+    "exec": "$HOME/04.Workspace/04.01.github/hebcal/hebcal -Th | awk -F'[^0-9]*' '{print $1}'",
     "interval": "once",
     "format": "| {}"
   },
   "custom/hebmon": {
-    "exec": "$HOME/git-workspace/hebcal/hebcal -Th | awk '{print $3}' | tr -cd '[:alnum:][:space:]'",
+    "exec": "$HOME/04.Workspace/04.01.github/hebcal/hebcal -Th | awk '{print $3}' | tr -cd '[:alnum:][:space:]'",
     "interval": "once",
     "format": "{} |"
   },
