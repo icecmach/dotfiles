@@ -25,8 +25,8 @@
   "format_on_save": "on",
   "terminal": {
     "shell": {
-        "program": "/usr/bin/fish"
-      }
+      "program": "/usr/bin/fish"
+    }
   },
   "languages": {
     "Python": {
@@ -37,7 +37,7 @@
         }
       }
     },
-    "JSON": {
+    "JSONC": {
       "format_on_save": "off"
     }
   }

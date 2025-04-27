@@ -15,8 +15,7 @@
     "network",
     "cpu",
     "memory",
-    "custom/hebday",
-    "custom/hebmon",
+    "custom/hebdate",
     "clock",
     "bluetooth",
     "tray",
@@ -42,15 +41,10 @@
     // "icon-size": 21,
     "spacing": 10
   },
-  "custom/hebday": {
-    "exec": "$HOME/04.Workspace/04.01.github/hebcal/hebcal -Th | awk -F'[^0-9]*' '{print $1}'",
+  "custom/hebdate": {
+    "exec": "$HOME/04.Workspace/04.01.github/hebcal/hebcal -Th | head -n 1 | awk -F ' ' '{print $1, $3}' | tr -d 'th,\\,'",
     "interval": "once",
-    "format": "| {}"
-  },
-  "custom/hebmon": {
-    "exec": "$HOME/04.Workspace/04.01.github/hebcal/hebcal -Th | awk '{print $3}' | tr -cd '[:alnum:][:space:]'",
-    "interval": "once",
-    "format": "{} |"
+    "format": "| {} |"
   },
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
