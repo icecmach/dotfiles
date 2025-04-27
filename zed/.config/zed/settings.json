@@ -22,7 +22,7 @@
     "light": "Catppuccin Frappé - No Italics",
     "dark": "One Dark"
   },
-  "format_on_save": "off",
+  "format_on_save": "on",
   "terminal": {
     "shell": {
         "program": "/usr/bin/fish"
@@ -31,12 +31,14 @@
   "languages": {
     "Python": {
       "language_servers": ["pylsp"],
-      "format_on_save": "on",
       "formatter": {
         "language_server": {
           "name": "pylsp"
         }
       }
+    },
+    "JSON": {
+      "format_on_save": "off"
     }
   }
 }
