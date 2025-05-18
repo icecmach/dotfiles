@@ -7,8 +7,10 @@ zoxide init fish | source
 fzf --fish | source
 
 alias cd z
-alias cat bat
+alias cat "bat -p"
 alias env "env | sort"
+alias vi "vim"
+alias view "vim -R"
 
 # Vagrant
 alias vdown "vagrant halt"

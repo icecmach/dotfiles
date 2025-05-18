@@ -22,6 +22,7 @@
     "light": "Catppuccin Frappé - No Italics",
     "dark": "One Dark"
   },
+  "soft_wrap": "none",
   "format_on_save": "on",
   "terminal": {
     "shell": {
