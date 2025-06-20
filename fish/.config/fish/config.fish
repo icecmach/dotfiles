@@ -5,6 +5,7 @@ end
 starship init fish | source
 zoxide init fish | source
 fzf --fish | source
+pyenv init - fish | source
 
 alias cd z
 alias cat "bat -p"
