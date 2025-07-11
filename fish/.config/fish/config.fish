@@ -10,6 +10,7 @@ pyenv init - fish | source
 alias cd z
 alias cat "bat -p"
 alias env "env | sort"
+alias ls "eza --icons"
 alias vi "vim"
 alias view "vim -R"
 

@@ -42,20 +42,10 @@
       "format_on_save": "off"
     }
   },
-  "lsp": {
-    "rust-analyzer": {
-      "checkOnSave": false,
-      "check": {
-        "workspace": false,
-        "allTargets": false
-      }
-    }
-  },
   "features": {
     "edit_prediction_provider": "none"
   },
   "agent": {
-    "enabled": false,
-    "version": "2"
+    "enabled": false
   }
 }
