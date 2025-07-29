@@ -9,7 +9,7 @@
 {
   "icon_theme": "Catppuccin Frappé",
   "outline_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "telemetry": {
     "metrics": false,
@@ -19,7 +19,7 @@
   "buffer_font_size": 14,
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Frappé - No Italics",
+    "light": "Catppuccin Macchiato",
     "dark": "One Dark"
   },
   "soft_wrap": "none",
@@ -46,6 +46,10 @@
     "edit_prediction_provider": "none"
   },
   "agent": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "qwen2.5-coder:latest"
+    },
     "enabled": false
   }
 }
