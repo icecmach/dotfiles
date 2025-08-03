@@ -5,10 +5,10 @@ end
 starship init fish | source
 zoxide init fish | source
 fzf --fish | source
-pyenv init - fish | source
+#pyenv init - fish | source
 
 alias cd z
-alias cat "bat -p"
+#alias cat "bat -p"
 alias env "env | sort"
 alias ls "eza --icons"
 alias vi "vim"
