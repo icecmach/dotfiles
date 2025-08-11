@@ -14,4 +14,4 @@ normal.family = "CommitMono Nerd Font Mono"
 size = 12
 
 [general]
-import = ["~/.config/alacritty/themes/catppuccin-mocha.toml"]
+import = ["~/.config/alacritty/themes/github-dark-colorblind.toml"]
