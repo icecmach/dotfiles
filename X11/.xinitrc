@@ -1,6 +1,3 @@
-# Start Dinit service management system
-dinit -q &
-
 # Set keyboard layout
 setxkbmap us -variant colemak &
 
