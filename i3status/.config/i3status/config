@@ -7,8 +7,8 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
-        interval = 5
+    colors = true
+    interval = 5
 }
 
 #order += "ipv6"
@@ -19,32 +19,33 @@ order += "disk /"
 order += "load"
 order += "cpu_temperature 0"
 order += "memory"
+order += "battery 0"
 order += "tztime local"
 
 volume master {
-        format = "♪: %volume"
-        format_muted = "♪: muted (%volume)"
-        device = "default"
-        mixer = "Master"
-        mixer_idx = 0
+    format = "♪: %volume"
+    format_muted = "♪: muted (%volume)"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
 }
 
 wireless _first_ {
-        format_up = " %quality [%essid] %ip"
-        format_down = "W: down"
+    format_up = " %quality [%essid] %ip"
+    format_down = "W: down"
 }
 
 ethernet _first_ {
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+    format_up = "E: %ip (%speed)"
+    format_down = "E: down"
 }
 
 disk "/" {
-        format = "%avail"
+    format = "%avail"
 }
 
 load {
-        format = "%1min"
+    format = "%1min"
 }
 
 cpu_temperature 0 {
@@ -53,11 +54,19 @@ cpu_temperature 0 {
 }
 
 memory {
-        format = "%used | %available"
-        threshold_degraded = "1G"
-        format_degraded = "MEMORY < %available"
+    format = "%used | %available"
+    threshold_degraded = "1G"
+    format_degraded = "MEMORY < %available"
+}
+
+battery 0 {
+    format = "%status %percentage"
+    format_percentage = "%.00f%s"
+	last_full_capacity = true
+	status_chr= "⚡"
+	status_bat= "🔋"
 }
 
 tztime local {
-        format = "%b %d %H:%M"
+    format = "%b %d %H:%M"
 }
