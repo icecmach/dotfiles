@@ -1,5 +1,5 @@
 type = process
-depends-on = user-dbus-check
+depends-on = dbus
 depends-on = pipewire
 after = pipewire-pulse
 restart = on-failure
