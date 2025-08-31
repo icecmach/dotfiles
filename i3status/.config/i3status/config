@@ -11,7 +11,6 @@ general {
     interval = 5
 }
 
-#order += "ipv6"
 order += "volume master"
 order += "wireless _first_"
 #order += "ethernet _first_"
@@ -20,6 +19,7 @@ order += "load"
 order += "cpu_temperature 0"
 order += "memory"
 order += "battery 0"
+order += "read_file hebcal"
 order += "tztime local"
 
 volume master {
@@ -41,20 +41,20 @@ ethernet _first_ {
 }
 
 disk "/" {
-    format = "%avail"
+    format = " %avail"
 }
 
 load {
-    format = "%1min"
+    format = " %1min"
 }
 
 cpu_temperature 0 {
-	format = "%degrees°C "
+	format = " %degrees°C"
 	path = "/sys/class/hwmon/hwmon3/temp1_input"
 }
 
 memory {
-    format = "%used | %available"
+    format = " %percentage_used"
     threshold_degraded = "1G"
     format_degraded = "MEMORY < %available"
 }
@@ -67,6 +67,10 @@ battery 0 {
 	status_bat= "🔋"
 }
 
+read_file hebcal {
+    path = "~/hebdate"
+}
+
 tztime local {
-    format = "%b %d %H:%M"
+    format = "%b %d %H:%M "
 }
