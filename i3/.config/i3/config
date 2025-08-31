@@ -53,6 +53,9 @@ bindsym $mod+E exec zeditor
 # kill focused window
 bindsym $mod+C kill
 
+# lock screen
+bindsym $mod+L exec "i3lock -i ~/Downloads/wallhaven-o5e3m9.png"
+
 # start dmenu (a program launcher)
 bindsym $mod+r exec --no-startup-id dmenu_run
 
