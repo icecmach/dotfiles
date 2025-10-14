@@ -5,7 +5,7 @@ setxkbmap us -variant colemak &
 xset s off -dpms
 
 # Set wallpaper
-feh --bg-fill $HOME/Downloads/wallhaven-j5k7jw.jpg
+feh --bg-fill $HOME/Downloads/wallhaven-2k.jpg
 
 # Load resource file
 xrdb -merge ~/.Xresources

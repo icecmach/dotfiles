@@ -18,7 +18,7 @@ order += "disk /"
 order += "load"
 order += "cpu_temperature 0"
 order += "memory"
-order += "battery 0"
+#order += "battery 0"
 order += "read_file hebcal"
 order += "tztime local"
 
