@@ -8,6 +8,7 @@ shell.args = ["-l"]
 [window]
 padding.x = 10
 padding.y = 10
+opacity = 0.95
 
 [font]
 normal.family = "CommitMono Nerd Font Mono"

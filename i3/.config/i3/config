@@ -27,6 +27,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Autostart picom when starting the i3 window manager
+exec_always --no-startup-id picom -b
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
@@ -181,6 +184,9 @@ gaps outer 5
 
 # Border style for new windows
 default_border pixel 3
+
+# class        border  backgr. text    indicator child_border
+client.focused #000000 #000000 #ffffff #000000 #000000
 
 # Brave
 # Assign and switch to workspace 1
