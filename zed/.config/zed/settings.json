@@ -7,7 +7,6 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "icon_theme": "Catppuccin Macchiato",
   "outline_panel": {
     "dock": "right"
   },
@@ -31,14 +30,6 @@
     }
   },
   "languages": {
-    "Python": {
-      "language_servers": ["pylsp"],
-      "formatter": {
-        "language_server": {
-          "name": "pylsp"
-        }
-      }
-    },
     "JSONC": {
       "format_on_save": "off"
     }
